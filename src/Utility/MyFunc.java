@@ -1,4 +1,4 @@
-package Utlity;
+package Utility;
 
 public class MyFunc {
 

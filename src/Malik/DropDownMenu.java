@@ -1,6 +1,6 @@
 package Malik;
 
-import Utlity.BaseDriver;
+import Utility.BaseDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Action;
@@ -10,7 +10,6 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.awt.*;
-import java.awt.event.KeyEvent;
 import java.util.List;
 
 public class DropDownMenu extends BaseDriver {
