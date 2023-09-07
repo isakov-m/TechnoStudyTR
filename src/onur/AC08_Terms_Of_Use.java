@@ -24,25 +24,17 @@ public class AC08_Terms_Of_Use extends BaseDriver {
         //WebElement sart= driver.findElement(By.xpath("//input[@name='Checkbox']"));
         WebElement sart= driver.findElement(By.className("t-checkbox__labeltext"));// calisiyor
         sart.click();
+        System.out.println("kullanim sartlarina tiklandi ");
 
         MyFunc.Bekle(1);
 
-
-
-       Assert.assertTrue("Kullanım Şartları ekrani acilmadi ",sart.getText().contains("Kullanım Şartları"));
+       Assert.assertTrue("Kullanım Şartları bilgi sayafasi acilmadi ",sart.getText().contains("Kullanım Şartları"));
 
         TakesScreenshot ts=(TakesScreenshot) driver; //1.Aşama ekran görünütü alma değişkenini tanımladım
         File hafidakiHali=ts.getScreenshotAs(org.openqa.selenium.OutputType.FILE);
 
-
-
         MyFunc.Bekle(2);
         driver.quit();
-
-
-
-
-
 
         // bonus hata
         // kullanim hatasi: dil degistilirdigi zaman ana sayfaya atiyor

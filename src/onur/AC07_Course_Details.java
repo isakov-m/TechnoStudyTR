@@ -49,6 +49,7 @@ public class AC07_Course_Details extends BaseDriver {
         WebElement veri_gorsl=driver.findElement(By.xpath("//h3[@class='tn-atom' and @field='tn_text_1670828331678']"));
 
         Assert.assertTrue("bilgiler görüntülenemedi ",veri_gorsl.getText().contains("Veri Görselleştirme ve İş Zekası"));
+        System.out.println("TEST TAMAMLANDI ");
         MyFunc.Bekle(2);
 
         driver.quit();
