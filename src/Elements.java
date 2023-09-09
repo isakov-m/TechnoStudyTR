@@ -1,4 +1,5 @@
 import Utlity.BaseDriver;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -6,7 +7,9 @@ import org.openqa.selenium.support.PageFactory;
 import java.util.List;
 
 public class Elements {
-    public Elements() {PageFactory.initElements(BaseDriver.driver,this);}
+    public Elements() {
+        PageFactory.initElements(BaseDriver.driver, this);
+    }
 
     @FindBy(xpath = "(//a[text()='Kurslar'])[1]")
     public WebElement kurslar;
@@ -46,11 +49,44 @@ public class Elements {
     @FindBy(css = "[field='tn_text_1622986948166']>:nth-child(1)")
     public WebElement masterAciklama;
 
-    //TS02
+    //TS02 Emre
     @FindBy(xpath = "//td[text()='Campus Login']")
     public WebElement campusLoginText;
 
+    //TS03 Murat
+    @FindBy(xpath = "(//*[text()='BAŞVUR'])[1]")
+    public WebElement basvur;
+    @FindBy(name = "name")
+    public WebElement adSoyad;
+    @FindBy(name = "email")
+    public WebElement email;
+    @FindBy(css = "[class='t-input-phonemask__select-flag']")
+    public WebElement ulkekod;
+    @FindBy(id = "t-phonemask_ad")
+    public WebElement ulkeKodu;
+    @FindBy(name = "tildaspec-phone-part[]")
+    public WebElement tlf;
+    @FindBy(id = "sb-1667664755026")
+    public WebElement ul;
+    @FindBy(xpath = "//option[text()='Andorra']")
+    public WebElement ulke;
+    @FindBy(id = "sb-1663337581601")
+    public WebElement kursSec;
+    @FindBy(xpath = "//option[text()='Job Center & Arbeitsamt']")
+    public WebElement kurs;
+    @FindBy(id = "sb-1670423010572")
+    public WebElement nereden;
+    @FindBy(xpath = "//option[text()='Arkadaş vasıtası ile']")
+    public WebElement nerdenBul;
+    @FindBy(name = "promo code")
+    public WebElement promoKod;
+    @FindBy(css = "[class='t-checkbox__indicator']")
+    public WebElement sartname;
+    @FindBy(css = "[class='t-submit']")
+    public WebElement gonder;
 
+   @FindBy(xpath = "(//span[text()='Başvurunuz alınmıştır. Bilgilendirme emailinize gönderilmiştir.'])[2]")
+    public WebElement dogrulama;
 
 
 }
