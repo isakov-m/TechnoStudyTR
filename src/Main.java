@@ -85,9 +85,10 @@ public class Main extends BaseDriver {
         elements.promoKod.sendKeys("xyz");
         elements.sartname.click();
         elements.gonder.click();
-        WebElement dogrulama = driver.findElement(By.xpath("(//span[text()='Başvurunuz alınmıştır. Bilgilendirme emailinize gönderilmiştir.'])[2]"));
 
-        Assert.assertTrue(dogrulama.getText().contains("Başvurunuz alınmıştır."), "Dogrulanamadi");
+
+
+        Assert.assertTrue(elements.dogrulama.getText().contains("Başvurunuz alınmıştır."), "Dogrulanamadi");
 
         BekleVeKapat();
     }

@@ -85,5 +85,8 @@ public class Elements {
     @FindBy(css = "[class='t-submit']")
     public WebElement gonder;
 
+   @FindBy(xpath = "(//span[text()='Başvurunuz alınmıştır. Bilgilendirme emailinize gönderilmiştir.'])[2]")
+    public WebElement dogrulama;
+
 
 }
