@@ -6,9 +6,13 @@ Domain: https://techno.study/tr
 Team
   Abdymalik Isakov - QA Lead
   Şenol Doğan - QA
+  
   Onur Yüksek - QA
+  
   Murat Yarış - QA
+  
   Tuba Çağlar - QA
+  
   Emre Kargı  - QA
 
   #Başlarken
