@@ -153,22 +153,17 @@ public class Main extends BaseDriver {
     public void TS05() {
 
         driver.get("https://techno.study/tr");
+        Elements elements=new Elements();
+
         MyFunc.Bekle(4);
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollTo(0, document.body.scrollHeight);");
 
-        WebElement facebook = driver.findElement(By.xpath("//*[@id='rec515963432']/div/div/div[1]/div[1]/ul/li[1]"));
-        facebook.click();
-
-        WebElement instagram = driver.findElement(By.xpath("//*[@id='rec515963432']/div/div/div[1]/div[1]/ul/li[2]"));
-        instagram.click();
-
-        WebElement youtube = driver.findElement(By.xpath("//*[@id='rec515963432']/div/div/div[1]/div[1]/ul/li[3]"));
-        youtube.click();
-
-        WebElement linkedin = driver.findElement(By.xpath("//*[@id='rec515963432']/div/div/div[1]/div[1]/ul/li[4]"));
-        linkedin.click();
+        elements.facebook.click();
+        elements.instagram.click();
+        elements.youtube.click();
+        elements.linkedin.click();
 
         BekleVeKapat();
     }
