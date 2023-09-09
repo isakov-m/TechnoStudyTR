@@ -46,12 +46,12 @@ public class Main extends BaseDriver {
 
     @Test
     public void TS02() {
+        Elements elements=new Elements();
 
         driver.get("https://techno.study/tr");
         MyFunc.Bekle(2);
 
-        WebElement campusLoginText = driver.findElement(By.xpath("//td[text()='Campus Login']"));
-        campusLoginText.click();
+        elements.campusLoginText.click();
         MyFunc.Bekle(2);
 
         Assert.assertTrue(driver.getCurrentUrl().equals("https://campus.techno.study/"), "Campuse login olunamiyor");
