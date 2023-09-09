@@ -14,7 +14,7 @@ Team
   #Başlarken
   Başlamanın en kolay yolu depoyu klonlamaktır:
   # File > New > Project From Version Control 
-# URL yı kopyala
+# URL yi kopyala
 https://github.com/isakov-m/TechnoStudyTR.git
 
 # Projeyi Intellij de aç
