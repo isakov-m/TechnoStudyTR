@@ -23,8 +23,7 @@ public class BaseDriver {
 
 
         //driver=new FirefoxDriver();
-        driver = new EdgeDriver();
-        //driver= new SafariDriver();
+        driver = new EdgeDriver();        //driver= new SafariDriver();
         //driver =new EdgeDriver();
         driver.manage().window().maximize(); // Ekranı max yapıyor.
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(50)); // 20 sn mühlet: sayfayı yükleme mühlet
