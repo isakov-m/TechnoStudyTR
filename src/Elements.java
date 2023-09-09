@@ -46,6 +46,10 @@ public class Elements {
     @FindBy(css = "[field='tn_text_1622986948166']>:nth-child(1)")
     public WebElement masterAciklama;
 
+    //TS02
+    @FindBy(xpath = "//td[text()='Campus Login']")
+    public WebElement campusLoginText;
+
 
 
 
