@@ -1,7 +1,7 @@
 # TechnoStudyTR
 Techno Study Batch 4 Group 18 Cuma Projesi. Biz bu projede JAVA yi ve Test Tool lari kullandik.
 
-Domain: https://openmrs.org/
+Domain: https://techno.study/tr
 
 Team
   Abdımalik İsakov - QA Lead
@@ -34,7 +34,7 @@ org.seleniumhq.selenium:selenium-java:4.11.0
 org.testng:testng:6.14.3
 
 # Maven den slf4j yi indir
-org.slf4j:slf4j-nop:1.7.0
+org.slf4j:slf4j-nop:1.7.30
 
 # Maven den commons.io yu indir
 commons-io:commons-io:2.11.0
