@@ -86,8 +86,6 @@ public class Main extends BaseDriver {
         elements.sartname.click();
         elements.gonder.click();
 
-
-
         Assert.assertTrue(elements.dogrulama.getText().contains("Başvurunuz alınmıştır."), "Dogrulanamadi");
 
         BekleVeKapat();
@@ -155,20 +153,15 @@ public class Main extends BaseDriver {
         driver.get("https://techno.study/tr");
         MyFunc.Bekle(4);
 
+        Elements elements=new Elements();
+
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollTo(0, document.body.scrollHeight);");
 
-        WebElement facebook = driver.findElement(By.xpath("//*[@id='rec515963432']/div/div/div[1]/div[1]/ul/li[1]"));
-        facebook.click();
-
-        WebElement instagram = driver.findElement(By.xpath("//*[@id='rec515963432']/div/div/div[1]/div[1]/ul/li[2]"));
-        instagram.click();
-
-        WebElement youtube = driver.findElement(By.xpath("//*[@id='rec515963432']/div/div/div[1]/div[1]/ul/li[3]"));
-        youtube.click();
-
-        WebElement linkedin = driver.findElement(By.xpath("//*[@id='rec515963432']/div/div/div[1]/div[1]/ul/li[4]"));
-        linkedin.click();
+        elements.facebook.click();
+        elements.instagram.click();
+        elements.youtube.click();
+        elements.linkedin.click();
 
         BekleVeKapat();
     }

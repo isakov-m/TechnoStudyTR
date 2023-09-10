@@ -53,6 +53,16 @@ public class Elements {
     @FindBy(xpath = "//td[text()='Campus Login']")
     public WebElement campusLoginText;
 
+    //TS05 Emre
+    @FindBy (xpath = "//*[@id='rec515963432']/div/div/div[1]/div[1]/ul/li[1]")
+    public WebElement facebook;
+    @FindBy (xpath = "//*[@id='rec515963432']/div/div/div[1]/div[1]/ul/li[2]")
+    public WebElement instagram;
+    @FindBy(xpath ="//*[@id='rec515963432']/div/div/div[1]/div[1]/ul/li[3]")
+    public WebElement youtube;
+    @FindBy(xpath = "//*[@id='rec515963432']/div/div/div[1]/div[1]/ul/li[4]")
+    public WebElement linkedin;
+
     //TS03 Murat
     @FindBy(xpath = "(//*[text()='BAŞVUR'])[1]")
     public WebElement basvur;
@@ -84,7 +94,6 @@ public class Elements {
     public WebElement sartname;
     @FindBy(css = "[class='t-submit']")
     public WebElement gonder;
-
    @FindBy(xpath = "(//span[text()='Başvurunuz alınmıştır. Bilgilendirme emailinize gönderilmiştir.'])[2]")
     public WebElement dogrulama;
 
